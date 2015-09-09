@@ -1,0 +1,36 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<!-- Will be referenced in Spring Context File -->
+	<persistence-unit name="jpa-persistence" transaction-type="RESOURCE_LOCAL">
+		<class>com.journaldev.jpa.data.Employee</class>
+		<class>com.journaldev.jpa.data.Aplicacion</class>
+		<class>com.journaldev.jpa.data.Area</class>
+		<class>com.journaldev.jpa.data.Cargo</class>
+		<class>com.journaldev.jpa.data.Rol</class>
+		<class>com.journaldev.jpa.data.Ubicacion</class>
+		<class>com.journaldev.jpa.data.Suministro</class>
+		<class>com.journaldev.jpa.data.Atributo</class>
+		<class>com.journaldev.jpa.data.Detalle</class>
+		<class>com.journaldev.jpa.data.Usuario</class>
+		<class>com.journaldev.jpa.data.Login</class>
+		<class>com.journaldev.jpa.data.Estado</class>
+		
+	<!-- 	<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/TestDB" />
+			<property name="javax.persistence.jdbc.user" value="pankaj" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.password" value="pankaj123" />
+		</properties> -->
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testdb" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.password" value="mysql" />
+			<property name="eclipselink.logging.level" value="OFF" />
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+		</properties>
+	</persistence-unit>
+</persistence>

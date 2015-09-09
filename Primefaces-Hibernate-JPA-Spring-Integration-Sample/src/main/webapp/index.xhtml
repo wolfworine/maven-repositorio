@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <f:facet name="first">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		
+        <title>WiseVision - Responsive Bootstrap Admin</title>
+
+        <link rel="shortcut icon" href="#{request.contextPath}/resources/favicon.ico" />
+
+    </f:facet>
+
+    <link  href="#{request.contextPath}/resources/css/yui_2_8_0r4_min_combo.css" rel="stylesheet" />
+    <link  href="#{request.contextPath}/resources/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    <link  href="#{request.contextPath}/resources/css/default.css"  rel="stylesheet" />
+
+
+    <ui:insert name="head" />
+   
+</h:head>
+
+    <body class="yui-skin-sam login">´
+    <p:growl id="mensaje" life="3000" ></p:growl>
+    <h:form id="form-login" >
+    <div id="mainlogin">
+        <div id="messagebox"></div>
+        <div id="login-top"></div>
+        <div id="login-body">
+            <div id="panelLogin">
+                <div id="branding">WiseVision Repository </div>
+                <div id="loginForm">
+                    <div>
+                        <label>Email</label>
+   						<p:inputText  value="#{loginManagedBean.usuario.c_email}" id="login-email" name="login-email" required="true" styleClass="psTextbox psLoginText"  ></p:inputText>
+
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <p:password value="#{loginManagedBean.usuario.d_password}" id="register-password" name="register-password" styleClass="psTextbox psLoginText" ></p:password>
+         
+                    </div>
+                    <div>
+                        <span class="yui-button yui-push-button" id="loginbutton">
+                        <p:commandButton value="Log In" id="login" actionListener="#" styleClass="first-child"/>
+ 						</span>
+                    </div>
+                    
+                    <div>
+                        
+                    </div>
+
+                    <div>
+                        <a href="#">Register New Contact</a>, 
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="login-bottom"></div>
+    </div>
+        <ui:insert name="footer">
+	        <ui:include src="/WEB-INF/templates/footer.xhtml"/> 
+	    </ui:insert>
+ </h:form>
+</body>
+
+</html>

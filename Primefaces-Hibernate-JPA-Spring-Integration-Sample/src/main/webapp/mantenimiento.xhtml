@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+<!-- 	<ui:define name="header">
+	    Add your header here or delete to use the default
+	</ui:define>
+	<ui:define name="content">
+	    Add your content here or delete to use the default
+	</ui:define>
+	<ui:define name="footer">
+	    Add your footer here or delete to use the default
+	</ui:define> -->
+	
+	
+<ui:define name="content"> 
+        <div id="bd"><!-- body -->
+            <div class="yui-b leftsidebar"> 
+                <span class="yui-button yui-menu-button" id="menutoggle">
+                <span class="first-child">
+                <p:commandButton value="Create New..." id="Creat" actionListener="#" />
+                </span></span>
+                <br/>
+                <br/>
+                <span class="recentList">Recent:</span>
+                <div id="IdUserPreference"></div>
+                <!-- Left Columns   -->
+                <div class="yui-b sidebarlefttop"> </div>          
+            </div>
+            <div id="yui-main"><!-- main desktop content -->
+                <div class="yui-b midletop"> </div>
+                <div id="idmidle2" class="yui-b midle">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="resourceHeader">
+                        <tbody>
+                            <tr>                           
+                                <td class="headermessage">
+                                    <span id="idResourceName" class="resourceName">Incidents</span>
+                                </td>                            
+                                <td class="headermessage">
+                                    <span id="messagebox"></span>
+                                </td>
+                                <td class="headermessage">
+                                    <div id="messageBoxDialog" title=""></div>                                
+                                    <span id="openMessageDialog" style="display: none;"></span>
+                                </td>
+                            </tr>
+                    </tbody>
+                    </table>    
+        
+        
+        <div id="resourceForm">
+        <div id="filter" class="filterdesk">
+            <input id="textsearch" class="ps-filter-textsearch textboxMiddle" type="text"/>      
+            <span class="yui-button yui-push-button" id="buttonGo">
+            <span class="first-child">
+            <p:commandButton value="Search" id="Search" actionListener="#" />
+            </span></span>
+                  
+
+            
+                
+            <div class="ps-filter-advancedview psHidden">   
+            <!-- template for autocomplete to clone from when creating new autocomplete components -->
+                <div id="autocomplete-template" class="psHidden">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td class="acbox">
+                                <div class="pl-autocomplete">                               
+                                    <input class="psTextbox pl-autocomplete-input psHidden" type="text"/>
+                                    <div class="pl-autocomplete-container"></div>
+                                </div>
+                                <a id="autocomplete-template-link" href=""></a>
+                               </td>
+                            <td class="">
+                                <button class="lookup pl-lookup-panel-show"></button>
+                                <button class="lookupSetEmpty pl-lookup-panel-setEmpty psHidden"></button>
+                            </td>
+                        </tr>
+                    </tbody></table>
+
+                    <div class="resizablepanel pl-lookup-panel">                                
+                        <div class="bd">
+                            <div class="yui-skin-sam pl-lookup-datatable"></div>
+                        </div>
+                        <div class="ft"></div>
+                    </div>
+                </div>
+                        
+						<!-- tabla aqui -->
+            </div>
+        </div>
+        <div class="desktopTable">
+        <h:form>
+            <div class="desktopTableActions">
+    
+                <span class="yui-button yui-push-button" id="deleteButton">
+                <span class="first-child">
+                <p:commandButton value="Delete" id="delete" actionListener="#" />
+                </span></span>
+                
+                <span class="yui-button yui-push-button" id="buttonExport">
+                <span class="first-child">
+                 <p:commandButton value="Exporter" id="Exporter" actionListener="#" />
+                </span></span>
+            </div>               
+            
+        </h:form>
+        </div>
+        </div>
+
+        
+    	   </div> <!--  End of - <div id="yui-main"> -->
+           <div class="yui-b midleBottom"> </div>
+           </div><!--  End of - <div class="yui-b midle"> - main desktop content -->
+           
+        </div>   <!--  End of body  - <div id="bd"> -->
+
+      
+</ui:define>
+</ui:composition>
+</html>

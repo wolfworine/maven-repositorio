@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <f:facet name="first">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        
+        <title>WiseVision - Responsive Bootstrap Admin</title>
+
+        <link rel="shortcut icon" href="#{request.contextPath}/resources/favicon.ico" />
+
+    </f:facet>
+
+    <link  href="#{request.contextPath}/resources/css/yui_2_8_0r4_min_combo.css" rel="stylesheet" />
+    <link  href="#{request.contextPath}/resources/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    <link  href="#{request.contextPath}/resources/css/default.css"  rel="stylesheet" media="all"/>
+
+
+    <ui:insert name="head" />
+   
+</h:head>
+
+    <body class="yui-skin-sam">´
+    <p:growl id="mensaje" life="3000" ></p:growl>
+   <div id="doc3" class="yui-t2">
+ 	
+	    <ui:insert name="header">
+	            <ui:include src="/WEB-INF/templates/header.xhtml"/> 
+	    </ui:insert>
+	
+		<ui:insert name="content">
+		
+		</ui:insert>
+	
+        <ui:insert name="footer">
+	        <ui:include src="/WEB-INF/templates/footer.xhtml"/> 
+	    </ui:insert>
+        
+    </div> <!-- End of - <div id="doc3" class="yui-t2">e do -->
+</body>
+
+</html>

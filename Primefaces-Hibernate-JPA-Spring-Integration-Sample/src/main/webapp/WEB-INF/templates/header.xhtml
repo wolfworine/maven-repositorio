@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:p="http://primefaces.org/ui">
+
+<body>
+		<div id="hd" class="psHeader">
+	        <span style="color:#d1d1d1; font-size:110%; font-weight:bold; position:absolute"> 
+	            
+	        </span>
+	        <div style="text-align:right" class="psProfile">
+	           <span id="myProfile"><a id="myProfileLink" href="http://development.polarsoftware.com/ccnetphd/user/2002/view/full/iperson/2002">My Profile</a> </span> | <a href="http://help.polarsoftware.com/phd/">Help</a> | <span id="idLogout"><a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#">Logout [Administrator3 User]</a></span>
+	        </div>                        
+	        <div id="topNavigation2">
+	        <div id="mymenubar2" class="yui-module yui-overlay yuimenubar visible" style="position: static; display: block; z-index: 0; visibility: visible;">
+	        <div class="bd">
+	        <h:form>
+	        <p:megaMenu orientation="horizontal" style="margin-top:20px">
+    <p:submenu label="Aplicacion" >
+        <p:column>
+            <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nueva" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+  
+        </p:column>
+ 
+
+ 
+
+    </p:submenu>
+ 
+    <p:submenu label="Area" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+ 
+ 	<p:submenu label="Cargo" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+ 
+ 	<p:submenu label="Ubicacion" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+    
+    <p:submenu label="Rol" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+ 
+     <p:submenu label="Suministro" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+     <p:submenu label="Atributo" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+    <p:submenu label="Detalle" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="#" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+        <p:submenu label="Detalle" >
+ 
+        <p:column>
+         <p:submenu label="Mantenimiento">
+                <p:menuitem value="Nuevo" url="index.xhtml" />
+                <p:menuitem value="Listado" url="#" />
+            </p:submenu>
+            
+        </p:column>
+ 
+
+    </p:submenu>
+    
+    <p:menuitem value="Quit"  />
+</p:megaMenu></h:form>
+	    <!--     <ul class="first-of-type">
+	        <li class="yuimenubaritem yuimenubaritem-hassubmenu first-of-type" id="yui-gen9" groupindex="0" index="0">
+	        <a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-incidents" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Incidents</a></li>
+	        <li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen10" groupindex="0" index="1">
+	        <a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-workorders" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Work Orders</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen11" groupindex="0" index="2">
+	        <a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-users" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Users</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen12" groupindex="0" index="3">
+	        <a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-contacts" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Contacts</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen13" groupindex="0" index="4"><a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-accounts" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Accounts</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen14" groupindex="0" index="5"><a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-teams" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Teams</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen15" groupindex="0" index="6"><a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-emails" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Emails</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen16" groupindex="0" index="7"><a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-documents" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Documents</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen17" groupindex="0" index="8"><a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-reports" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Reports</a></li><li class="yuimenubaritem yuimenubaritem-hassubmenu" id="yui-gen18" groupindex="0" index="9"><a href="http://development.polarsoftware.com/ccnetphd/incidents?maxresults=100#nav-administration" class="yuimenubaritemlabel yuimenubaritemlabel-hassubmenu">Administration</a></li></ul>
+	         --></div>
+	        </div>
+	        </div>      
+	    </div>
+</body>
+</html>
